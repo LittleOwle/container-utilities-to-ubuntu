@@ -19,7 +19,9 @@ runC: https://github.com/opencontainers/runc
 
 install:
 ~~~bash
+sudo apt install libseccomp2 libseccomp-dev
 curl https://raw.githubusercontent.com/LittleOwle/container-utilities-to-ubuntu/main/scripts/build.sh -sSf | sudo bash
+sudo rm -rf /opt/owle-externals/source
 ~~~
 
 
